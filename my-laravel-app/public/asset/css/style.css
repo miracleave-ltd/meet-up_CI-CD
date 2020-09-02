@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin:auto;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.header-wrapper{
+    display:flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: burlywood;
+}
+
+.title{
+    line-height: 50px;
+    padding: 5px 10px;
+}
+
+.title a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.menu ul li{
+    float: left;
+    margin-right:20px;
+}
+
+.menu ul li a{
+    padding:5px 15px;
+    color:#fff;
+    background-color: #636b6f;
+}
+
+.menu ul li a:hover{
+    color :#636b6f;
+    background-color:#fff;
+}
+
+/* home.blade.php */
+.home-content{
+    text-align: center;
+}
+
+.home-content ul li{
+    margin: 50px auto;
+    height:60px;
+    width: 200px;
+    line-height: 60px;
+    background-color: #636b6f;
+    border-style: solid;
+    border-width: medium;
+    border-color:  #636b6f;
+}
+
+.home-content ul li a{
+    color:#fff;
+    display:block;
+    height: 100%;
+    font-size: 20px;
+}
+
+.home-content ul li a:hover{
+    color :#636b6f;
+    background-color:#fff;
+}
+
+/* register.blade.php */
+.register-book .cp-iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+
+.register-book .cp-iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #1b2538;
+	border-radius: 4px;
+}
+
+.register-book .ef input[type='text']:focus {
+	border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+
+.register-book input[type='submit']{
+    padding:5px 10px;
+    color:#fff;
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    float: left;
+}
+
+.register-book input[type='submit']:hover{
+    
+    color:#fff;
+    background-color: blue;
+}
+
+/* show.blade.php */
+.book-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.book-list .book-block{
+    width: 300px;
+    border:1px solid #636b6f;
+    border-radius: 5px;
+    background-color: aquamarine;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.book-list .book-block .header{
+    text-align: center;
+}
+
+
+
