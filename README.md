@@ -1,1 +1,6 @@
-# meet-up_ci-cd_aws_circleci
+# CircleCI ✖︎ AWSでCI/CDを体験しよう！！
+
+##はじめに
+### CI/CDとは
+
+
