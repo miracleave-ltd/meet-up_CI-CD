@@ -46,6 +46,7 @@ CI/CDとは高度な継続的自動化と継続的監視をアプリケーショ
 
 ## CI/CDツール選定
 ### Jenkins
+![image](https://user-images.githubusercontent.com/66664167/92107197-5a536380-ee20-11ea-95b5-6488c0ecb79f.png)
 #### - メリット - <br>
 - 拡張性が高い。プロジェクトに合わせてカスタマイズしやすい
 - オンプレ上に構築するため、IPが固定される
@@ -57,6 +58,7 @@ CI/CDとは高度な継続的自動化と継続的監視をアプリケーショ
 - 保守・運用が必要なため管理を怠ると属人化しやすい
 
 ### TravisCI
+![image](https://user-images.githubusercontent.com/66664167/92107394-a9999400-ee20-11ea-80af-30f183fb4802.png)
 #### - メリット - <br>
 - Cloudであるため、サーバの管理・運用は不要になる
 - Githubとの親和性高い
@@ -68,6 +70,7 @@ CI/CDとは高度な継続的自動化と継続的監視をアプリケーショ
 - Cloudなのでビルドの度にIPが変わる
 
 ### CircleCI
+![image](https://user-images.githubusercontent.com/66664167/92107539-ecf40280-ee20-11ea-8651-7261697f7995.png)
 #### - メリット - <br>
 - Cloudであるため、サーバの管理・運用は不要
 - 公式のサポートが手厚い
