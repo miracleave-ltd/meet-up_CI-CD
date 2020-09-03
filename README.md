@@ -91,7 +91,7 @@ CI/CDとは高度な継続的自動化と継続的監視をアプリケーショ
 ### 3.環境・言語
 ### 4.事前準備
 - AWS アカウント作成
-- AWS EC2インスタンの起動、Elastic IPの設定
+- AWS EC2インスタンの起動、Elastic IPの設定　[設定方法はこちら](https://github.com/miracleave-ltd/aws_ec2)
 - Docker　インストール
 - docker-compose インストール
 - GitHub アカウント作成
