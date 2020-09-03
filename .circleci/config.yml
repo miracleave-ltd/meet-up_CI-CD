@@ -1,5 +1,6 @@
 # circleCIのバージョン指定
 version: 2
+# jobsの設定（実際に実行するコマンド郡）
 jobs:
   build:
     machine:
@@ -29,9 +30,11 @@ jobs:
     steps:
       - checkout
       # CircleCIに登録した秘密鍵を呼び出す。
-      - add_ssh_keys:
-      - run: ssh ${USER_NAME}@${HOST_NAME} 'cd my-favarite-books && sudo git pull origin master && sudo docker-compose restart'
+      - add_ssh_keys
+      - run:
+          ssh ${USER_NAME}@${HOST_NAME} 'cd my-favarite-books && sudo git pull origin master && docker-compose restart'
 
+# 定義したjobsをどう動かすか設定する
 # テストが成功した場合のみ、deployを実行するようにします。
 workflows:
   version: 2
@@ -39,6 +42,8 @@ workflows:
     jobs:
       - build
       - deploy:
+      # CircleCI上で設定した環境変数を呼び出し
+          context: meet-up
           requires:
             - build
           # masterブランチがpushされた場合のみdeployするようにする。
